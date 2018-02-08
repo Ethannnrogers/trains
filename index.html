@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Trains</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    
+    
+</head>
+<body>
+        <!-- Header -->
+        <div class="jumbotron">
+                <h1 class="display-3">Train Schedule</h1>
+                <div class="container" id="divider"></div>
+                <div class="time" id="time-display"><p><span id="currentTime"></span></p></div>
+                
+        </div>
+        <!-- Train Listings -->
+            <div class="card box" id="first-box">
+                <div class="card-header" id="card-color">
+                    
+                <p>Train Listings</p>
+                    
+                        
+                </div>
+                <div class="card-block" id="content-display">
+                    <table class="table" id="display-table">
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (Minutes)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <!--
+                        <tbody>
+                            <tr>
+                                <td>East Corridor</td>
+                                <td>NYC</td>
+                                <td>30</td>
+                                <td>13:30</td>
+                                <td>17</td>
+                            </tr>
+                        </tbody>
+                    -->
+                    </table>
+                </div>
+            </div>
+        
+        <!-- Add Train Container -->
+        <div class="card box" id="content-bottom">
+            <div class="card-header">
+                <p>Add A Train</p>
+            </div>
+
+            <div class="card-block">
+                <form role="form">
+                    <div class="form-group col-lg-12 padd">
+                        <label class="form-control-label" for="form-group-input">Train Name</label>
+                        <input type="text" class="form-control" id="train-name">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label class="form-control-label" for="form-group-input">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                
+                    <div class="form-group col-lg-12">
+                        <label class="form-control-label" for="form-group-input">First Train Time</label>
+                        <input type="text" class="form-control" id="first-train-time">
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <label class="form-control-label" for="form-group-input">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    
+                    
+                </form>
+                <button type="button" class="btn btn-primary btn-lg btn-block button" id="submit">Add To List</button>
+                
+            </div>
+            
+        </div>
+
+
+
+
+            
+                   
+                    
+
+                    
+
+              
+    
+       
+                <script type="text/javascript" src="assets/js/app.js"></script>
+                
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+.jumbotron {
+    background-color: rgb(141, 67, 67);
+    color: rgb(224, 224, 224);
+    text-align: center;
+    border-radius: 0px;
+}
+
+.card-header {
+    border-radius: 0px;
+    background-color: rgb(141, 67, 67);
+    width: 100%;
+    color: rgb(224, 224, 224);
+    font-size: 27px;
+    height: 70px;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+#content-bottom {
+    padding-top: 30px;
+}
+
+.button {
+    background-color: rgb(141, 67, 67);
+    border-color: rgb(141, 67, 67);
+    color: rgb(224, 224, 224);
+    
+    
+}
+
+.button:hover {
+    background-color: rgb(98, 98, 167);
+    border-color: rgb(98, 98, 167);
+}
+
+p {
+    text-align: center;
+}
+#time-display {
+    height: 2px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    
+}
+#currentTime {
+    font-size: 50px;
+}
+#divider{
+    background-color: rgb(224, 224, 224);
+    height: 2px;
+    width: 45%;
+
+}
+
+#first-box {
+    margin-top: -15px;
+}
